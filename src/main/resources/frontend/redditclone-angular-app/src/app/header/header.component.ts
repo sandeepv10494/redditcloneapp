@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faSun, faMoon, faCog } from '@fortawesome/free-solid-svg-icons';
 import { AuthService } from '../auth/shared/auth.service';
+
 
 @Component({
   selector: 'app-header',
@@ -11,6 +12,9 @@ import { AuthService } from '../auth/shared/auth.service';
 export class HeaderComponent implements OnInit {
 
   faUser = faUser;
+  faMoon = faMoon;
+  faSun = faSun;
+  faCog = faCog;
   isLoggedIn: boolean;
   username: string;
 

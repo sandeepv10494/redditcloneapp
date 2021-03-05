@@ -1,3 +1,10 @@
 .register-section {
-  margin: 100px;
+  background: url("../../../assets/redditbackground.jpg") no-repeat center
+    center fixed;
+  min-height: 800px;
+  min-width: 1000px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

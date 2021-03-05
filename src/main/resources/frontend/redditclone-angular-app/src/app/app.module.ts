@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { AuthModule } from './auth/auth.module';
 import { NgxWebstorageModule } from 'ngx-webstorage';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule, ToastrService } from 'ngx-toastr';
@@ -23,11 +22,16 @@ import { CreatePostComponent } from './post/create-post/create-post.component';
 import { ViewPostComponent } from './post/view-post/view-post.component';
 import { EditorModule } from '@tinymce/tinymce-angular';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SignUpComponent } from './auth/sign-up/sign-up.component';
+import { LoginComponent } from './auth/login/login.component';
+import { UserComponentComponent } from './auth/user-component/user-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    SignUpComponent,
+    LoginComponent,
     HomeComponent,
     PostTileComponent,
     SideBarComponent,
@@ -36,7 +40,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ListSubredditsComponent,
     CreateSubredditComponent,
     CreatePostComponent,
-    ViewPostComponent
+    ViewPostComponent,
+    UserComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +53,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ToastrModule.forRoot(),
     FontAwesomeModule,
     EditorModule,
-    AuthModule,
     NgbModule
   ],
   providers: [

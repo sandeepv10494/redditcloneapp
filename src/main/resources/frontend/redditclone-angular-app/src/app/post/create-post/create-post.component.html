@@ -1,7 +1,8 @@
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <hr />
-    <div class="create-post-container col-md-9">
+    <div class="col-1"></div>
+    <div class="create-post-container col-10">
       <form class="post-form" [formGroup]="createPostForm" (ngSubmit)="createPost()">
         <div class="form-group">
           <div class="create-post-heading">Create Post</div>
@@ -38,5 +39,6 @@
         </div>
       </form>
     </div>
+    <div class="col-1"></div>
   </div>
 </div>

@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
       password: new FormControl('', Validators.required)
     });
 
-    this.activatedRoute.queryParamMap.subscribe(param => {
+    this.activatedRoute.queryParams.subscribe(param => {
       if(param.registered !== undefined && param.registered === 'true' ){
         this.toastr.success('Signup Successful');
         this.registerSuccessMessage = 'Please Check you inbox for activation email and activate you account before login';

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { PostService } from 'src/app/shared/post.service';
 import { CommentPayload } from 'src/app/comment/comment.payload';
 import { CommentService } from 'src/app/comment/comment.service';
 import { PostModel } from 'src/app/shared/post.model';
-import { PostService } from 'src/app/shared/post.service';
 
 @Component({
   selector: 'app-user-component',
